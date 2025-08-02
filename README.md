@@ -57,9 +57,8 @@ Neovim's configurations are located under the following paths, depending on your
 so that you have your own copy that you can modify, then install by cloning the
 fork to your machine using one of the commands below, depending on your OS.
 
-> [!NOTE]
-> Your fork's URL will be something like this:
-> `https://github.com/<your_github_username>/kickstart.nvim.git`
+
+> `https://github.com/ninocan/kickstart.nvim.git`
 
 You likely want to remove `lazy-lock.json` from your fork's `.gitignore` file
 too - it's ignored in the kickstart repo to make maintenance easier, but it's
@@ -74,7 +73,7 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/ninocan/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim-kickstart
 ```
 
 </details>
@@ -84,13 +83,13 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "%localappdata%\nvim"
+git clone https://github.com/nvim-lua/kickstart.nvim.git "%localappdata%\nvim-kickstart"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim-kickstart"
 ```
 
 </details>
@@ -100,7 +99,7 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nv
 Start Neovim
 
 ```sh
-nvim
+kim
 ```
 
 That's it! Lazy will install all the plugins you have. Use `:Lazy` to view
@@ -131,7 +130,7 @@ examples of adding popularly requested plugins.
     to maintain multiple configurations. For example, you can install the kickstart
     configuration in `~/.config/nvim-kickstart` and create an alias:
     ```
-    alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+    alias kim='NVIM_APPNAME="nvim-kickstart" nvim'
     ```
     When you run Neovim using `nvim-kickstart` alias it will use the alternative
     config directory and the matching local directory
